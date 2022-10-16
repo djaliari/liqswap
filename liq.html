@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Liquidity</title>
+</head>
+
+<body class="font-mono">
+        <!-- Nav -->
+<div class="bg-slate-0 flex flex-row justify-center py-3 space-x-4 md:space-x-16 rounded-b-3xl md:rounded-b-full">
+    <div class="flex flex-row">
+        <img src="/dist/logo.png" alt="logo" class="w-12" />
+        <p class="text-slate-500 mt-3 ml-1 text-lg font-mono font-bold hidden md:block">LiQswap</p>
+    </div>
+    <div class="flex flex-row space-x-2 md:space-x-8">        
+        <a href="index.html" class="bg-slate-200 text-slate-500 font-mono py-3 md:py-3 rounded-2xl px-3 md:px-6 text-center drop-shadow-2xl shadow-md shadow-gray-400 border-slate-300 border-solid border-1 opacity-80 hover:animate-pulse  hover:bg-slate-400">Home</a>        
+        <a href="swap.html" class="bg-slate-200 text-slate-500 font-mono py-3 md:py-3 rounded-2xl px-3 md:px-6 text-center drop-shadow-2xl shadow-md shadow-gray-400 border-slate-300 border-solid border-1 opacity-80 hover:animate-pulse  hover:bg-slate-400">Swap</a>
+        <a href="liq.html" class="bg-slate-200 hidden text-slate-500 font-mono py-3 md:py-3 rounded-2xl px-3 md:px-5 text-center justify-between drop-shadow-2xl shadow-md shadow-gray-400 border-slate-300 border-solid border-1 opacity-80 hover:animate-pulse hover:bg-slate-400">Liquid</a>
+    </div>
+    <div class="flex">        
+        <button href="" class="bg-slate-200 text-slate-500 font-mono font-bold py-3 rounded-2xl px-3 md:px-5 text-center justify-between drop-shadow-2xl shadow-md shadow-gray-400 border-slate-300 border-solid border-1 opacity-80 hover:animate-pulse hover:bg-slate-400" type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">Connect</button>
+        <div id="drawer-right-example" class="fixed shadow-2xl z-40 h-screen p-4 overflow-y-auto rounded-l-3xl bg-slate-100 w-80 dark:bg-gray-800 transition-transform right-0 top-0 translate-x-full" tabindex="-1" aria-labelledby="drawer-right-label" aria-hidden="true">
+            <h5 id="drawer-right-label" class="ml-5 mt-5 inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"><svg class="w-5 h-5 mr-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>Connect Metamask</h5>
+            <button type="button" data-drawer-dismiss="drawer-right-example" aria-controls="drawer-right-example" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Close menu</span>
+            </button>
+            <p class="ml-5 mb-6 text-sm text-gray-500 dark:text-gray-400">Connect your Metamask Wallet for using our Service or <a href="https://metamask.io/download/" target="_blank" class="text-blue-600 underline dark:text-blue-500 hover:no-underline">download Metamask</a> and create a new Wallet.</p>
+            <div class="grid grid-cols-2 gap-4">
+                <a href="#" class="ml-5 px-3 py-2 text-sm font-medium text-center text-gray-900 bg-slate-200 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-300 hover:text-slate-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Cancel</a>
+                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-slate-50 bg-slate-400 rounded-lg hover:bg-gray-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get Connect <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>            
+            </div>
+        </div>        
+    </div>       
+</div>
+            <!-- Hero -->
+<div class="flex flex-col md:flex-row items-center justify-center mt-10 ml-7">
+       <div class="ml-0 md:ml-10 flex flex-col text-center items-center mt-5 md:hidden">
+        <p class="font-semibold text-xl mb-2">Save Liquidity</p>
+        <p class="text-sm">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Odit sed ut quis dicta ea modi</p>
+        <img src="/dist/liq.png" alt="" class="hidden md:block w-96" />
+        <p class="text-sm">Lorem ipsum dolor sit amet consectetur <br> Quas suscipit odio consectetur ratione nisi quos.</p>
+    </div>
+    <div class="mt-5 flex flex-col justify-center items-center">
+        <section class="bg-slate-100 rounded-3xl w-72 h-full flex flex-col items-center justify-center shadow-xl border-r border-l border-gray-200">
+            <div class="mt-5 flex gap-10">
+                <h1 class="text-lg font-semibold text-slate-600">Your Liquidity</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(122, 120, 120);transform: ;msFilter:;"><path d="M12 16c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.084 0 2 .916 2 2s-.916 2-2 2-2-.916-2-2 .916-2 2-2z"></path><path d="m2.845 16.136 1 1.73c.531.917 1.809 1.261 2.73.73l.529-.306A8.1 8.1 0 0 0 9 19.402V20c0 1.103.897 2 2 2h2c1.103 0 2-.897 2-2v-.598a8.132 8.132 0 0 0 1.896-1.111l.529.306c.923.53 2.198.188 2.731-.731l.999-1.729a2.001 2.001 0 0 0-.731-2.732l-.505-.292a7.718 7.718 0 0 0 0-2.224l.505-.292a2.002 2.002 0 0 0 .731-2.732l-.999-1.729c-.531-.92-1.808-1.265-2.731-.732l-.529.306A8.1 8.1 0 0 0 15 4.598V4c0-1.103-.897-2-2-2h-2c-1.103 0-2 .897-2 2v.598a8.132 8.132 0 0 0-1.896 1.111l-.529-.306c-.924-.531-2.2-.187-2.731.732l-.999 1.729a2.001 2.001 0 0 0 .731 2.732l.505.292a7.683 7.683 0 0 0 0 2.223l-.505.292a2.003 2.003 0 0 0-.731 2.733zm3.326-2.758A5.703 5.703 0 0 1 6 12c0-.462.058-.926.17-1.378a.999.999 0 0 0-.47-1.108l-1.123-.65.998-1.729 1.145.662a.997.997 0 0 0 1.188-.142 6.071 6.071 0 0 1 2.384-1.399A1 1 0 0 0 11 5.3V4h2v1.3a1 1 0 0 0 .708.956 6.083 6.083 0 0 1 2.384 1.399.999.999 0 0 0 1.188.142l1.144-.661 1 1.729-1.124.649a1 1 0 0 0-.47 1.108c.112.452.17.916.17 1.378 0 .461-.058.925-.171 1.378a1 1 0 0 0 .471 1.108l1.123.649-.998 1.729-1.145-.661a.996.996 0 0 0-1.188.142 6.071 6.071 0 0 1-2.384 1.399A1 1 0 0 0 13 18.7l.002 1.3H11v-1.3a1 1 0 0 0-.708-.956 6.083 6.083 0 0 1-2.384-1.399.992.992 0 0 0-1.188-.141l-1.144.662-1-1.729 1.124-.651a1 1 0 0 0 .471-1.108z"></path></svg>
+            </div>
+            <div  class="mt-10 border-2 bg-slate-300 px-16 py-5 italic">
+                <a class="mx-auto">Connect Metamask</a>
+            </div>           
+            <div>
+                <button class="mb-10 py-2 px-6 mt-10 bg-slate-300 text-gray-700 font-bold font-mono border-slate-300 border-solid border-1 opacity-80 rounded-xl drop-shadow-2xl shadow-md shadow-gray-400 hover:shadow-2xl hover:animate-pulse hover:bg-slate-400">+ Add Liquidity</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Liq section -->
+    <div class="ml-0 md:ml-10 md:flex flex-col text-center items-center mt-5 hidden">
+        <p class="font-semibold text-xl mb-2">Save Liquidity</p>
+        <p class="text-sm">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Odit sed ut quis dicta ea modi</p>
+        <img src="/dist/liq.png" alt="" class="hidden md:block w-96" />
+        <p class="text-sm">Lorem ipsum dolor sit amet consectetur <br> Quas suscipit odio consectetur ratione nisi quos.</p>
+    </div>
+</div>
+<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+</html>

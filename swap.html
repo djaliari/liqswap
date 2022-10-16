@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Swap</title>
+</head>
+
+<body>
+        <!-- Nav -->
+<div class="bg-slate-0 flex flex-row justify-center py-3 space-x-4 md:space-x-16 rounded-b-3xl md:rounded-b-full">
+    <div class="flex flex-row">
+        <img src="/dist/logo.png" alt="logo" class="w-12" />
+        <p class="text-slate-500 mt-3 ml-1 text-lg font-mono font-bold hidden md:block">LiQswap</p>
+    </div>
+    <div class="flex flex-row space-x-2 md:space-x-8">
+        <a href="index.html" class="bg-slate-200 text-slate-500 font-mono py-3 md:py-3 rounded-2xl px-3 md:px-6 text-center drop-shadow-2xl shadow-md shadow-gray-400 border-slate-300 border-solid border-1 opacity-80 hover:animate-pulse  hover:bg-slate-400">Home</a>
+        <a href="swap.html" class="bg-slate-200 hidden text-slate-500 font-mono py-3 md:py-3 rounded-2xl px-3 md:px-6 text-center drop-shadow-2xl shadow-md shadow-gray-400 border-slate-300 border-solid border-1 opacity-80 hover:animate-pulse  hover:bg-slate-400">Swap</a>
+        <a href="liq.html" class="bg-slate-200 text-slate-500 font-mono py-3 md:py-3 rounded-2xl px-3 md:px-5 text-center justify-between drop-shadow-2xl shadow-md shadow-gray-400 border-slate-300 border-solid border-1 opacity-80 hover:animate-pulse hover:bg-slate-400">Liquid</a>
+    </div>
+    <div class="flex">        
+        <button href="" class="bg-slate-200 text-slate-500 font-mono font-bold py-3 rounded-2xl px-3 md:px-5 text-center justify-between drop-shadow-2xl shadow-md shadow-gray-400 border-slate-300 border-solid border-1 opacity-80 hover:animate-pulse hover:bg-slate-400" type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">Connect</button>
+        <div id="drawer-right-example" class="fixed shadow-2xl z-40 h-screen p-4 overflow-y-auto rounded-l-3xl bg-slate-100 w-80 dark:bg-gray-800 transition-transform right-0 top-0 translate-x-full" tabindex="-1" aria-labelledby="drawer-right-label" aria-hidden="true">
+            <h5 id="drawer-right-label" class="ml-5 mt-5 inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"><svg class="w-5 h-5 mr-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>Connect Metamask</h5>
+            <button type="button" data-drawer-dismiss="drawer-right-example" aria-controls="drawer-right-example" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Close menu</span>
+            </button>
+            <p class="ml-5 mb-6 text-sm text-gray-500 dark:text-gray-400">Connect your Metamask Wallet for using our Service or <a href="https://metamask.io/download/" target="_blank" class="text-blue-600 underline dark:text-blue-500 hover:no-underline">download Metamask</a> and create a new Wallet.</p>
+            <div class="grid grid-cols-2 gap-4">
+                <a href="#" class="ml-5 px-3 py-2 text-sm font-medium text-center text-gray-900 bg-slate-200 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-300 hover:text-slate-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Cancel</a>
+                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-slate-50 bg-slate-400 rounded-lg hover:bg-gray-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get Connect <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>            
+            </div>
+        </div>        
+    </div>       
+</div>
+
+        <!-- Hero -->
+<div class="flex flex-col md:flex-row items-center justify-center  md:gap-16">
+    <div class="flex flex-col text-center items-center mt-5 ">
+        <p class="md:ml-4 font-semibold text-xl mb-2">Save Swap your Token</p>
+        <p class="md:ml-4 text-sm">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Odit sed ut quis dicta ea modi</p>
+        <img src="/dist/swap.png" alt="" class="hidden md:block w-80" />
+        <p class="ml-5 md:ml-4 text-sm">Lorem ipsum dolor sit amet consectetur <br> Quas suscipit odio consectetur ratione nisi quos.</p>
+    </div>
+                <!-- swap section -->
+    <div class=" -mr-5 mt-4 flex flex-col justify-center items-center">
+        <section class="bg-slate-100 rounded-3xl w-72 h-full flex flex-col items-center justify-center shadow-xl border-r border-l border-gray-200">
+            <div class=" bg-slate-200 py-1 hover:shadow-2xl mt-4 cursor-copy border-solid flex flex-col items-center drop-shadow-2xl opacity-80 rounded-xl w-1/3 shadow-md shadow-gray-400">
+                <img src="/dist/coin.png" alt="" class="w-16"/>
+                <p class="font-mono text-xs antialiased text-gray-600 text-center">Coin</p>           
+            </div>
+            <select class="mt-4 select w-1/2 font-mono text-gray-600 font-bold shadow-2xl">
+                <option disabled selected>Select</option>
+                <option>BTC</option>
+                <option>ETH</option>
+                <option>BNB</option>
+                <option>XRP</option>
+                <option>SOL</option>
+            </select>
+            <p class="mt-2 -mb-3 text-xs font-mono text-slate-400">Balance: 0.0</p>
+            <input type="text" placeholder="Amount" class="mt-4 text-center px-1 caret-gray-800 focus:border-slate-50 focus:ring-slate-400 text-sm placeholder:italic placeholder:text-slate-400 placeholder:text-xs border-2 border-slate-200 rounded-xl shadow-2xl drop-shadow-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(126, 126, 126);transform: ;msFilter:;"><path d="m12 15.586-4.293-4.293-1.414 1.414L12 18.414l5.707-5.707-1.414-1.414z"></path><path d="m17.707 7.707-1.414-1.414L12 10.586 7.707 6.293 6.293 7.707 12 13.414z"></path></svg>        
+            <div class=" bg-slate-200 py-1 hover:shadow-2xl cursor-copy border-solid flex flex-col items-center drop-shadow-2xl opacity-80 rounded-xl w-1/3 shadow-md shadow-gray-400">
+                <img src="/dist/stable.png" alt="" class="w-16"/>
+                <p class="font-mono text-xs antialiased text-gray-600 text-center">Stable</p>           
+            </div>
+            <select class="mt-4 select w-1/2 font-mono text-gray-600 font-bold shadow-2xl ">
+                <option disabled selected>Select</option>
+                <option>USDT</option>
+                <option>USDC</option>
+                <option>BUSD</option>
+            </select>
+            <p class="mt-2 -mb-3 text-xs font-mono text-slate-400">Balance: 0.0</p>
+            <input type="text" placeholder="0" class="mt-4 mb-2 text-center px-1 caret-gray-800 focus:border-slate-50 focus:ring-slate-400 text-sm placeholder:italic placeholder:text-slate-400 placeholder:text-xs border-2 border-slate-200 rounded-xl shadow-2xl drop-shadow-xl">
+        </section>
+    <div class="items-center justify-center flex flex-row gap-4 mb-3">
+        <button class=" py-2 px-6 mt-4 bg-slate-300 text-gray-700 font-bold font-mono border-slate-300 border-solid border-1 opacity-80 rounded-xl drop-shadow-2xl shadow-md shadow-gray-400 hover:shadow-2xl hover:animate-pulse hover:bg-slate-400">Aprove</button>
+        <button class=" py-2 px-8 mt-4 bg-slate-300 text-gray-700 font-bold font-mono border-slate-300 border-solid border-1 opacity-80 rounded-xl drop-shadow-2xl shadow-md shadow-gray-400 hover:shadow-2xl hover:animate-pulse hover:bg-slate-400">Swap</button>
+    </div>
+    </div>
+</div>
+<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+</html>
